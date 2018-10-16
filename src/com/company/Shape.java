@@ -7,7 +7,7 @@ public abstract class Shape {
     public Shape (String type){
         this.type = type;
     }
-    
+
     public abstract double getArea();
 
     public abstract double getPerimeter();
