@@ -1,19 +1,22 @@
 package com.company;
 
 public class Rectangle extends Shape {
-    private int side;
+    private int height;
+    private int width;
 
-    public Rectangle(int side) {
+    public Rectangle(int height,int width) {
         super ("Rectangle");
-        this.side = side;
+        this.height = height;
+        this.width = width;
     }
+
     @Override
     public double getArea(){
-        return (side * side)
+        return (width * height);
     }
 
     @Override
     public double getPerimeter(){
-        return side*4;
+        return ((width*2) + (height * 2));
     }
 }
